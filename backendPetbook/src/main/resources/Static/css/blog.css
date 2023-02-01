@@ -1,0 +1,134 @@
+body{
+    font-family: var(--font-nunito);
+    
+}
+
+.bg-main{
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+    
+    background-color: #ffffff;
+    opacity: 0.9;
+    background-image: radial-gradient(#FFC75F 5px, #ffffff 2px);
+    background-size: 35px 35px;
+
+}
+
+.cards-blog-espaciado{
+    padding: 2rem;
+}
+
+.card{
+    /* margin: 1rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0px;
+    /* background-color: aqua;
+    border: 3px solid red; */
+}
+
+.cards-space{
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+h1{
+    font-weight: 600;
+    text-align: center;
+    font-family: (--font-nunito);
+}
+
+
+
+/* CARRUSEL */
+/* external css: flickity.css */
+
+/* external css: flickity.css, fullscreen.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: (--font-nunito); }
+
+/* .carousel {
+  background: #FFECCC;
+} */
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}
+
+
+/* DESKTOP */
+
+/* clases extra carrusel */
+
+.text-card{
+    text-align: center;
+}
+
+.h5-desktop{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.h5-mobile{
+    display: none;
+}
+
+
+.text-card a{
+    color: grey;
+
+}
+
+/* .a-desktop{
+} */
+
+.a-mobile{
+    display: none;
+}
+
+
+/* Media Query Desktop */
+@media screen and ( min-width: 768px ) {
+
+
+  .carousel-cell img {
+    display: block;
+    height: 490px;
+  }
+
+}
+
+/* Media query texto MOBILE*/
+@media only screen and (max-width: 600px) {
+    
+    .h5-desktop{
+        display: none;
+    }
+
+    .h5-mobile{
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .a-desktop{
+        display: none;
+    }
+    
+    .a-mobile{
+        display: block;
+        font-size: 0.8rem;
+    }
+
+}
+
