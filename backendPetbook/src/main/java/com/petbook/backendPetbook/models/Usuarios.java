@@ -26,6 +26,11 @@ public class Usuarios {
 	@Column (nullable =false)
 	private String contrasena;
 	
+	
+	public Usuarios() {
+		// TODO Auto-generated constructor stub
+	}//constructor vacío
+	
 	public Usuarios(Long id, String nombre, String correo, String especie, Long telefono, String contrasena) {
 		super();
 		this.id = id;
@@ -79,6 +84,14 @@ public class Usuarios {
 	public void setContrasena(String contrasena) {
 		this.contrasena = contrasena;
 	}
+
+	@Override
+	public String toString() {
+		return "Usuarios [id=" + id + ", nombre=" + nombre + ", correo=" + correo + ", especie=" + especie
+				+ ", telefono=" + telefono + ", contrasena=" + contrasena + "]";
+	}
+	
+	
 	
 	
 	
